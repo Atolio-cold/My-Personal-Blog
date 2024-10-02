@@ -1,0 +1,244 @@
+/* Reset stylów domyślnych */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #1a73e8;
+    --nav-background: #ffffff;
+    --nav-text-color: #000000;
+    --footer-color: #555555;
+    --button-background: #1a73e8;
+    --button-text-color: #ffffff;
+    --button-border: 2px solid #1a73e8;
+    --button-hover-background: #1558b0;
+    --button-hover-border: 2px solid #1558b0;
+}
+
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --link-color: #bb86fc;
+    --nav-background: #1f1f1f;
+    --nav-text-color: #e0e0e0;
+    --footer-color: #cccccc;
+    --button-background: #bb86fc;
+    --button-text-color: #121212;
+    --button-border: 2px solid #bb86fc;
+    --button-hover-background: #a065e0;
+    --button-hover-border: 2px solid #a065e0;
+}
+
+/* Style dla trybu jasnego */
+body.light-mode {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Style dla trybu ciemnego */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+/* Style dla przycisku */
+.theme-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid #333; /* Obramowanie wokół przycisku */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.theme-button:hover {
+    background-color: #45a049;
+}
+
+
+/* Podstawowy styl dla ciała strony */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Styl menu nawigacyjnego */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styl sekcji "O mnie" */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Styl zdjęcia profilowego */
+.profile-photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* Styl biografii */
+.bio {
+    max-width: 600px;
+}
+
+.bio h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.bio p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Styl linków do mediów społecznościowych */
+.social-links a {
+    margin-right: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #0077b5; /* Kolor po najechaniu dla LinkedIn */
+}
+
+/* Styl stopki */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Styl sekcji bloga */
+.blog {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.post-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.post-card img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.post-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.post-info p.date {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.post-info a.read-more {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.post-info a.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Styl galerii */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-item p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Styl formularza kontaktowego */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+}
